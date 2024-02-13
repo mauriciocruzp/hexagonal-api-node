@@ -1,4 +1,4 @@
-import { User } from "../entities/User";
+import { User } from "../entities/user";
 
 export interface UserInterface {
     registerUser(user: User): Promise<User|null|undefined>;

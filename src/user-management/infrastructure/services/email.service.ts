@@ -1,5 +1,5 @@
-import { User } from "../../domain/entities/User";
-import { EmailInterface } from "./EmailInterface";
+import { User } from "../../domain/entities/user";
+import { EmailInterface } from "./email.interface";
 
 export class EmailService implements EmailInterface{
     buildEmail(user: User): string {

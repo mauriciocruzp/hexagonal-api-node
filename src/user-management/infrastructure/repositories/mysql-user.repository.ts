@@ -1,5 +1,5 @@
 import { executeQuery } from "../../../database/mysql";
-import { UserInterface } from "../../domain/interfaces/UserInterface";
+import { UserInterface } from "../../domain/interfaces/user.interface";
 import { User } from "../../domain/entities/User";
 
 export class MysqlUserRepository implements UserInterface {

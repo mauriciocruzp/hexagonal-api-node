@@ -1,4 +1,4 @@
-import { User } from "../../domain/entities/User";
+import { User } from "../../domain/entities/user";
 
 export interface EmailInterface {
     run(user: User):void;

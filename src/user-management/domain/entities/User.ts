@@ -1,6 +1,6 @@
-import { Activation } from "./Activation";
-import { Contact } from "./Contact";
-import { Credentials } from "./Credentials";
+import { Contact } from "./contact";
+import { Credentials } from "./credentials";
+import { Activation } from "./activation";
 
 export class User {
     public uuid: string;

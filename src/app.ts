@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import { Signale } from "signale";
 import morgan from 'morgan';
 
-import { userManagementRouter } from './user-management/infrastructure/routes/UserManagementRouter';
+import { userManagementRouter } from './user-management/infrastructure/routes/user.router';
 
 const app = express();
 const signale = new Signale();

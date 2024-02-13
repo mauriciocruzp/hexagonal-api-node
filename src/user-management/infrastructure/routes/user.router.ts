@@ -1,5 +1,5 @@
 import express from 'express';
-import { registerUserController } from '../Services/Dependencies';
+import { registerUserController } from '../services/dependencies';
 
 export const userManagementRouter = express.Router();
 

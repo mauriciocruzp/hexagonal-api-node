@@ -1,8 +1,8 @@
-import { UserInterface } from "../../domain/interfaces/UserInterface";
-import { Activation } from "../../domain/entities/Activation";
-import { Contact } from "../../domain/entities/Contact";
-import { Credentials } from "../../domain/entities/Credentials";
-import { User } from "../../domain/entities/User";
+import { UserInterface } from "../../domain/interfaces/user.interface";
+import { Activation } from "../../domain/entities/activation";
+import { Contact } from "../../domain/entities/contact";
+import { Credentials } from "../../domain/entities/credentials";
+import { User } from "../../domain/entities/user";
 
 export class RegisterUserUseCase {
     constructor(readonly repository: UserInterface) {}
