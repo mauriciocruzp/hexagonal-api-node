@@ -1,6 +1,6 @@
 import { executeQuery } from "../../../database/mysql";
 import { UserInterface } from "../../domain/interfaces/user.interface";
-import { User } from "../../domain/entities/User";
+import { User } from "../../domain/entities/user";
 
 export class MysqlUserRepository implements UserInterface {
     async registerUser(user: User): Promise<User | null | undefined> {
