@@ -1,14 +1,14 @@
 import { executeQuery } from "../../../database/mysql";
 import { UserInterface } from "../../domain/interfaces/user.interface";
 import { User } from "../../domain/entities/user";
+import { handleBCrypt } from "../services/dependencies";
 
 export class MysqlUserRepository implements UserInterface {
     async registerUser(user: User): Promise<User | null | undefined> {
         try {
-            console.log(user.credentials.email);
-
             let query = 'INSERT INTO users(id, first_name, last_name, email, password, cellphone) VALUES(?, ?, ?, ?, ?, ?)';
-            const params = [user.uuid, user.contact.firstName, user.contact.lastName, user.credentials.email, user.credentials.password, user.contact.cellPhone];
+            const encryptedPassword = await handleBCrypt.encryptPassword(user.credentials.password);
+            const params = [user.uuid, user.contact.firstName, user.contact.lastName, user.credentials.email, encryptedPassword, user.contact.cellPhone];
             const result = await executeQuery(query, params);
 
             console.log(result);
