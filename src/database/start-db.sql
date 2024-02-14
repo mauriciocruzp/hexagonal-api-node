@@ -1,4 +1,6 @@
-CREATE TABLE `user-management-db`.`users` (
+CREATE SCHEMA `user_management_db` ;
+
+CREATE TABLE `user_management_db`.`users` (
   `id` CHAR(36) NOT NULL,
   `first_name` VARCHAR(40) NOT NULL,
   `last_name` VARCHAR(40) NOT NULL,
