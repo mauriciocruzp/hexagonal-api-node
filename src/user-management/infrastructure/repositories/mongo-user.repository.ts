@@ -1,6 +1,4 @@
 import { UserInterface } from "../../domain/interfaces/user.interface";
-import { Contact } from "../../domain/entities/contact";
-import { Credentials } from "../../domain/entities/credentials";
 import { User } from "../../domain/entities/user";
 
 export class UserMongoRepository implements UserInterface {
