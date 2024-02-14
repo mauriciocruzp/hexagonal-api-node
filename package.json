@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A api using hexagonal architecture with typescript and node.js",
   "author": "mauricioacp34@gmail.com",
-  "license": "MIT",
   "keywords": [
     "typescript",
     "express",
