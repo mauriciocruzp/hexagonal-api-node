@@ -1,17 +1,9 @@
 {
-  "name": "express-typescript-service-template",
+  "name": "hexagonal-api-node",
   "version": "1.0.0",
-  "description": "Skeleton for new typescript services based on express",
-  "author": "alberthernandezdev@gmail.com",
+  "description": "A api using hexagonal architecture with typescript and node.js",
+  "author": "mauricioacp34@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AlbertHernandez/express-typescript-service-template/issues"
-  },
-  "homepage": "https://github.com/AlbertHernandez/express-typescript-service-template#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlbertHernandez/express-typescript-service-template.git"
-  },
   "keywords": [
     "typescript",
     "express",
