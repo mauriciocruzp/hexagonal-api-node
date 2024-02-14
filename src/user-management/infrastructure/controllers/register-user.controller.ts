@@ -7,11 +7,9 @@ export class RegisterUserController {
 
     async execute(req: Request,res: Response) {
         try{
-
             let user = await this.useCase.execute(req.body);
 
             return res.status(201).json(user);
-
         }catch(error:any) {
             return res.status(error.http_status ?? 500)
                 .json({
@@ -20,5 +18,4 @@ export class RegisterUserController {
                 });
         }
     }
-
 }

@@ -1,6 +1,7 @@
 import express from 'express';
-import { registerUserController } from '../services/dependencies';
+import { activateUserController, registerUserController } from '../services/dependencies';
 
 export const userManagementRouter = express.Router();
 
-userManagementRouter.post('/', registerUserController.execute.bind(registerUserController))
+userManagementRouter.post('/', registerUserController.execute.bind(registerUserController));
+userManagementRouter.put('/:token/activate', activateUserController.execute.bind(activateUserController));
